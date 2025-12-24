@@ -20,13 +20,15 @@ alias cl="clear"
 # autosuggestions
 # ─────────────────────────────────────────────
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_USE_ASYNC=1
+bindkey '^R' fzf-history-widget
 # ─────────────────────────────────────────────
 # FZF core
 # ─────────────────────────────────────────────
 export FZF_DEFAULT_OPTS="
-  --height=40%
   --layout=reverse
-  --border=rounded
+  --height=40%
   --margin=1
   --padding=1
   --info=inline
@@ -36,8 +38,11 @@ export FZF_DEFAULT_OPTS="
   --ansi
   --cycle
   --bind=ctrl-j:down,ctrl-k:up
+  --color=bg:#0A0A0A,bg+:#161B22,fg:#ECE7E8,fg+:#ECE7E8
+  --color=hl:#58A6FF,hl+:#58A6FF
+  --color=info:#8B949E,prompt:#58A6FF,pointer:#58A6FF
+  --color=marker:#3FB950,spinner:#A371F7,header:#8B949E
 "
-
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
