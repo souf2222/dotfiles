@@ -4,3 +4,5 @@
 .config/raycast
 .config/tmux/plugins
 .config/zed
+.DS_Store/
+node_modules/
