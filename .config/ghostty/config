@@ -1,6 +1,7 @@
 theme = "Catppuccin Frappe"
 bold-is-bright = true
-background-opacity = 1.0
+background-opacity = 0.75
+background-blur-radius = 16
 background = #0A0A0A
 foreground = #ECE7E8
 background-blur-radius = 20
