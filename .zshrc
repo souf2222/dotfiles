@@ -82,3 +82,14 @@ fi
 # ─────────────────────────────────────────────
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+
+# bun completions
+[ -s "/Users/soufiane/.bun/_bun" ] && source "/Users/soufiane/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
