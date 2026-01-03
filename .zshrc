@@ -1,4 +1,8 @@
 # ─────────────────────────────────────────────
+# alias
+# ─────────────────────────────────────────────
+alias ls="ls --color=auto -lhF"
+# ─────────────────────────────────────────────
 # zoxide
 # ─────────────────────────────────────────────
 eval "$(zoxide init --cmd cd zsh)"
@@ -76,20 +80,17 @@ source "$(brew --prefix)/opt/fzf/shell/completion.zsh"
 if [[ -z "$TMUX" ]] && [[ "$TERM_PROGRAM" == "ghostty" ]]; then
   tmux attach || tmux new
 fi
-
+# ─────────────────────────────────────────────
+# bun
+# ─────────────────────────────────────────────
+# bun completions
+[ -s "/Users/soufiane/.bun/_bun" ] && source "/Users/soufiane/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 # ─────────────────────────────────────────────
 # starship (ALWAYS LAST)
 # ─────────────────────────────────────────────
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
-
-# bun completions
-[ -s "/Users/soufiane/.bun/_bun" ] && source "/Users/soufiane/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
