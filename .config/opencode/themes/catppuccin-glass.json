@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "name": "catppuccin-glass",
+  "theme": {
+    "text": "#ECE7E8",
+    "textMuted": "#9399b2",
+    "background": "none",
+    "backgroundPanel": "#0A0A0A",
+    "backgroundElement": "#313244",
+    "primary": "#cba6f7",
+    "secondary": "#89b4fa",
+    "accent": "#f5e0dc",
+    "error": "#f38ba8",
+    "warning": "#fab387",
+    "success": "#a6e3a1",
+    "info": "#89dceb",
+    "border": "#45475a",
+    "borderActive": "#cba6f7",
+    "borderSubtle": "#313244",
+    "markdownCode": "#f9e2af",
+    "markdownLink": "#89b4fa",
+    "markdownHeading": "#cba6f7"
+  }
+}

@@ -1,6 +1,5 @@
 .DS_Store
 .config/gh
-.config/opencode
 .config/raycast
 .config/tmux/plugins
 .config/zed
