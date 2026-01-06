@@ -78,7 +78,7 @@ source "$(brew --prefix)/opt/fzf/shell/completion.zsh"
 # tmux (AFTER fzf is ready)
 # ─────────────────────────────────────────────
 if [[ -z "$TMUX" ]] && [[ "$TERM_PROGRAM" == "ghostty" ]]; then
-  tmux attach || tmux new
+  ~/.config/tmux/upawa.sh
 fi
 # ─────────────────────────────────────────────
 # bun
@@ -94,3 +94,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # ─────────────────────────────────────────────
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+
+# ─────────────────────────────────────────────
+# tmux status bar (always last)
+# ─────────────────────────────────────────────
+tmux source-file ~/.config/tmux/tmux.conf
