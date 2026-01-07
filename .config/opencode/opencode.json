@@ -28,5 +28,12 @@
       },
       "enabled": true
     }
+  },
+  "agent": {
+    "king": {
+      "label": "👑 Gemini King Mode",
+      "model": "opencode/glm-4.7-free",
+      "system": "King Mode placeholder. System prompt injected at runtime."
+    }
   }
 }
